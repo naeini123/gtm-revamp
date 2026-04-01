@@ -12,20 +12,37 @@
     <!-- Google Tag Manager (noscript) should go here-->
     <header>
         <nav>
+            <a class="nav-brand" href="index.html">
+                <img src="Liverpool-FC-80s-icon.png" alt="LFC">
+                Liverpool Fan Shop
+            </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="cart.html">Cart <span class="nav-cart-badge" id="cart-count">0</span></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Purchase Confirmation</h1>
-        <p>Thank you for your purchase!</p>
-        <p>Your order has been successfully processed.</p>
-        <p>We will send you a confirmation email with the details of your order.</p>
-        <button onclick="window.location.href='index.html'">Return to Home Page</button>
+        <div class="confirmation-wrapper">
+            <div class="confirmation-card">
+                <div class="confirmation-icon">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h1>Order Confirmed!</h1>
+                <p>Thank you for your purchase!</p>
+                <p>Your order has been successfully processed.</p>
+                <p>We will send you a confirmation email with the details of your order.</p>
+                <button onclick="window.location.href='index.html'">Continue Shopping &rarr;</button>
+            </div>
+        </div>
     </main>
+    <footer>
+        &copy; 2025 <span>Liverpool Fan Shop</span> &mdash; GTM Demo Store
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
