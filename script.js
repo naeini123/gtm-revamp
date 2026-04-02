@@ -1,20 +1,20 @@
-// Create global variables
-let userEmail = '';
-let userCity = '';
-let userZip = '';
+// Create global variables accessible to GTM Custom JavaScript variables
+window.userEmail = '';
+window.userCity = '';
+window.userZip = '';
 // Function to update global variables
 function updateVariables() {
   const emailInput = document.getElementById('email');
   const cityInput = document.getElementById('city');
   const zipInput = document.getElementById('zip');
   if (emailInput) {
-    userEmail = emailInput.value;
+    window.userEmail = emailInput.value;
   }
   if (cityInput) {
-    userCity = cityInput.value;
+    window.userCity = cityInput.value;
   }
   if (zipInput) {
-    userZip = zipInput.value;
+    window.userZip = zipInput.value;
   }
 }
 // Add event listeners to input boxes
